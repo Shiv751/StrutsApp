@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html style="background: url('frontend-technologies.png') no-repeat;">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<style type="text/css">
+.inputform {
+	background: url("blur1.jpg");
+	background-size: cover;
+	background-position:left;
+	color: black;
+	width: auto;
+	border: 1px solid pink;
+	padding: 550px;
+	float: right;
+	text-shadow: 1px 1px 3px #148;
+	opacity: .95;
+}
+
+.design {
+	background-color: red;
+	color: black;
+	padding-left: 70px;
+}
+</style>
+</head>
+<body class="inputform">
+		<h1 align="center">Register Here!</h1>
+		<h2 class="design">Registration Form</h2>
+		<h4 style="color: black;" align="center">Fields with * are
+			mendatory</h4>
+		<form action="register" method="post">
+			<table>
+				<tr>
+					<td>Name*:</td>
+					<td><input type="text" name="name" required="required"
+						placeholder="What Shall We Call You" /></td>
+				</tr>
+				<tr>
+					<td>Email*:</td>
+					<td><input type="email" name="email" required="required"
+						placeholder="e.g: abc@example.com" /></td>
+				</tr>
+				<tr>
+					<td>Password*:</td>
+					<td><input type="password" name="password" required="required"
+						placeholder="Secret Password" /></td>
+				</tr>
+				<tr>
+					<td>Gender*:</td>
+					<td><input id="gender1" type="radio" name="gender" required="required"
+						value="male" />Male <input type="radio" id="gender2"
+						name="gender"  required="required" value="female" />Female</td>
+				</tr>
+				<tr>
+					<td>Date Of Birth*:</td>
+					<td><input type="date" name="dob" required="required" placeholder="DD/MM/YY" /></td>
+				</tr>
+				<tr>
+					<td>AddressLine*:</td>
+					<td><textarea name="addressLine" rows="5" cols="25" required="required"
+							placeholder="Your Address"></textarea></td>
+				</tr>
+				<tr>
+					<td>City*:</td>
+					<td><input type="text" name="city" required="required" placeholder="Your city" /></td>
+				</tr>
+				<tr>
+					<td>State*:</td>
+					<td><input type="text" name="state" required="required" placeholder="Your State" /></td>
+				</tr>
+				<tr>
+					<td>Country*:</td>
+					<td><select name="country" required="required">
+							<option>Select-Country:</option>
+							<option>India</option>
+							<option>Pakistan</option>
+							<option>China</option>
+							<option>Bhutan</option>
+							<option>USA</option>
+							<option>France</option>
+							<option>Other</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Contact*:</td>
+					<td><input type="tel" name="contact" required="required" maxlength="10"
+						placeholder="10 digits only" /></td>
+				</tr>
+				<tr>
+					<td><br>
+					<input id="submit" type="submit" value="Register"></td>
+					<td><br>
+					<input id="reset" type="reset" value="Clear"></td>
+				</tr>
+			</table>
+
+		</form>
+		<footer>
+			<br/>
+			<p align="right">&copy;RKGEC 2013-17.All rights reserved</p>
+		</footer>
+
+</body>
+
+</html>
